@@ -1,0 +1,174 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMIKkbruuvoQYEX2VLiQGCM",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "ir",
+      "display_name": "R"
+    },
+    "language_info": {
+      "name": "R"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sivanikith/hello/blob/main/model.h5\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "wktEbxQ1uuAv",
+        "outputId": "c7bbff92-7626-4bf0-9f4f-3a81ff9d23d8"
+      },
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "ERROR",
+          "evalue": "Error in parse(text = input): <text>:1:6: unexpected symbol\n1: from sklearn.metrics\n         ^\n",
+          "traceback": [
+            "Error in parse(text = input): <text>:1:6: unexpected symbol\n1: from sklearn.metrics\n         ^\nTraceback:\n"
+          ]
+        }
+      ],
+      "source": [
+        "from sklearn.metrics import accuracy_score, classification_report\n",
+        "\n",
+        "# Assume y_test and X_test are test data and labels\n",
+        "y_pred = model.predict(X_test)\n",
+        "y_pred_classes = np.argmax(y_pred, axis=1)\n",
+        "\n",
+        "# Calculate accuracy\n",
+        "accuracy = accuracy_score(y_test, y_pred_classes)\n",
+        "print(f'Accuracy: {accuracy}')\n",
+        "\n",
+        "# Display classification report\n",
+        "print(classification_report(y_test, y_pred_classes))\n"
+      ]
+    },
+    {
+      "source": [
+        "!pip install sklearn\n",
+        "from sklearn.metrics import accuracy_score, classification_report\n",
+        "\n",
+        "# Assuming you have a trained model and test data (X_test, y_test) available\n",
+        "# Replace this with your actual model and data\n",
+        "# model = ...\n",
+        "# X_test = ...\n",
+        "# y_test = ...\n",
+        "\n",
+        "# Assume y_test and X_test are test data and labels\n",
+        "y_pred = model.predict(X_test)\n",
+        "y_pred_classes = np.argmax(y_pred, axis=1)\n",
+        "\n",
+        "# Calculate accuracy\n",
+        "accuracy = accuracy_score(y_test, y_pred_classes)\n",
+        "print(f'Accuracy: {accuracy}')\n",
+        "\n",
+        "# Display classification report\n",
+        "print(classification_report(y_test, y_pred_classes))"
+      ],
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "jZVTluQFv9J4",
+        "outputId": "47889034-85b3-45fc-c4d1-a5c17a4cfbe9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "ERROR",
+          "evalue": "Error in parse(text = input): <text>:1:6: unexpected symbol\n1: !pip install\n         ^\n",
+          "traceback": [
+            "Error in parse(text = input): <text>:1:6: unexpected symbol\n1: !pip install\n         ^\nTraceback:\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# New Section"
+      ],
+      "metadata": {
+        "id": "osn75-Blyqqw"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "CmHcDtE80GdW"
+      },
+      "execution_count": 3,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "from sklearn.metrics import accuracy_score, classification_report\n",
+        "from tensorflow.keras.models import load_model\n",
+        "\n",
+        "# Load your trained model\n",
+        "model = load_model('model.h5')\n",
+        "\n",
+        "# Load or prepare your test dataset\n",
+        "# Example: X_test could be your preprocessed test images as a NumPy array\n",
+        "# y_test should be the true labels corresponding to X_test\n",
+        "# X_test = ...\n",
+        "# y_test = ...\n",
+        "\n",
+        "# Make predictions\n",
+        "y_pred = model.predict(X_test)\n",
+        "y_pred_classes = np.argmax(y_pred, axis=1)\n",
+        "\n",
+        "# Calculate accuracy\n",
+        "accuracy = accuracy_score(y_test, y_pred_classes)\n",
+        "print(f'Accuracy: {accuracy}')\n",
+        "\n",
+        "# Display classification report\n",
+        "print(classification_report(y_test, y_pred_classes))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "bTCfHlFdwnfo",
+        "outputId": "eb73850b-5a32-4fab-d665-0e68bec0738f"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "ERROR",
+          "evalue": "Error in parse(text = input): <text>:1:8: unexpected symbol\n1: import numpy\n           ^\n",
+          "traceback": [
+            "Error in parse(text = input): <text>:1:8: unexpected symbol\n1: import numpy\n           ^\nTraceback:\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
